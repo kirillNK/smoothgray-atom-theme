@@ -139,53 +139,53 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @light-gray; //цвет комментария
     }
 
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @syntax-text-color; //кавычки, @, слеш, скобки
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @blue; //?
     }
 
     &.syntax--bold {
-      color: @light-orange;
-      font-weight: bold;
+      color: @light-orange; //?
+      font-weight: bold; //?
     }
 
     &.syntax--italic {
-      color: @purple;
-      font-style: italic;
+      color: @purple; //?
+      font-style: italic; //?
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@red, 10%); //?
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @light-orange; //для функций (Math."some")
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @cyan; //для функций
 
     &.syntax--any-method {
-      color: @blue;
+      color: @blue; //для функций
     }
   }
 }
 
-.syntax--entity {
+.syntax--entity { //для функций и переменных, с ними связаных
   &.syntax--name.syntax--function {
     color: @blue;
   }
@@ -221,34 +221,34 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @light-orange; //равно в class
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @orange; //?
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @blue; //?
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @purple; //?
   }
 
   &.syntax--separator {
-    background-color: @gray;
-    color: @syntax-text-color;
+    background-color: @gray; //?
+    color: @syntax-text-color; //?
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @syntax-text-color; //?
 }
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @orange; //?
     font-weight: bold;
   }
 
@@ -257,39 +257,39 @@ atom-text-editor {
   }
 
   &.syntax--deleted {
-    color: @red;
+    color: @red; //?
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @purple; //?
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+    color: @blue; //?
   }
 
   &.syntax--inserted {
-    color: @green;
+    color: @green; //?
   }
 
   &.syntax--list {
-    color: @red;
+    color: @red; //?
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @orange; //?
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @green; //?
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @green; //?
   }
 }
 
