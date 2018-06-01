@@ -1,33 +1,33 @@
 @import "syntax-variables";
-
+//editor elements styles
 atom-text-editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+  background-color: @syntax-background-color; //фон редактора (syntax)
+  color: @syntax-text-color; //цвет текста (bg-color, color)
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: @syntax-wrap-guide-color; //линия для переноса (если включен Soft wrap etc. в настройках)
   }
 
   .indent-guide {
-    color: @syntax-indent-guide-color;
+    color: @syntax-indent-guide-color; //?
   }
 
   .invisible-character {
-    color: @syntax-invisible-character-color;
+    color: @syntax-invisible-character-color; //?
   }
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color; //колонки с номерами строк
+    color: @syntax-gutter-text-color; //цвет колонок с номерами строк
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
+        background-color: @syntax-gutter-background-color-selected; //цвет выбраной строки в колнке с номерами строк
+        color: @syntax-gutter-text-color-selected; //цвет выбраной строки в колнке с номерами строк, если курсор что-то выделил в ней
       }
 
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+        color: @syntax-gutter-text-color-selected; //цвет текста в колонке с номерами строк если в ней стоит курсор, но ничего не выделенно
       }
     }
   }
@@ -35,19 +35,19 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @light-gray; //цвет свернутой строки в колонке с номерами строк + символ многоточия
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @syntax-text-color; //?
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @syntax-cursor-color; //цвет курсора
   }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    background-color: @syntax-selection-color; //цвет области, выделенной курсором
   }
 }
 
