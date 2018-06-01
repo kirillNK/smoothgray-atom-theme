@@ -1,0 +1,1 @@
+# smoothgray-atom-theme
