@@ -1,6 +1,7 @@
 @import "syntax-variables";
 //editor elements styles
 atom-text-editor {
+  .syntax--entity  {color: #EE90FF}
   background-color: @syntax-background-color; //фон редактора (syntax)
   color: @syntax-text-color; //цвет текста (bg-color, color)
 
@@ -55,14 +56,17 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray; //цвет комментария
+  //color: @light-gray; //цвет комментария
+  color: #596C7A; //цвет комментария
 }
 
 .syntax--keyword { //ключевые слова
-  color: @purple; //цвета операторов (if, else, case, break etc.)
+  //color: @purple; //цвета операторов (if, else, case, break etc.)
+  color: #ED91FF; //цвета операторов (if, else, case, break etc.)
 
   &.syntax--control {
-    color: @purple; //?
+    //color: @purple; //?
+    color: #ED91FF; //?
   }
 
   &.syntax--operator {
@@ -74,23 +78,27 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange; //различные единицы измерения
+    //color: @orange; //различные единицы измерения
+    color: #73D9FF; //различные единицы измерения
   }
 }
 
 .syntax--storage {
-  color: @purple; //var, function etc.
+  //color: @purple; //var, function etc.
+  color: #ED91FF; //var, function etc.
 }
 
 .syntax--constant {
-  color: @orange; //свойства? (flex, absolute, relatice, center, some in js etc.)
+  //color: @orange; //свойства? (flex, absolute, relatice, center, some in js etc.)
+  color: #73D9FF; //свойства? (flex, absolute, relatice, center, some in js etc.)
 
   &.syntax--character.syntax--escape {
     color: @cyan; //?
   }
 
   &.syntax--numeric {
-    color: @orange; //цыет всех цифр
+    //color: @orange; //цвет всех цифр
+    color: #73D9FF; //цвет всех цифр
   }
 
   &.syntax--other.syntax--color {
@@ -120,7 +128,8 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green; //строковые параметра (Roboto, url("этот текст"), etc.)
+  // color: @green; //строковые параметра (Roboto, url("этот текст"), etc.)
+  color: #B8F197; //строковые параметра (Roboto, url("этот текст"), etc.)
 
 
   &.syntax--regexp {
@@ -221,7 +230,7 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange; //равно в class
+    color: @syntax-text-color; //равно в class
   }
 
   &.syntax--link {
