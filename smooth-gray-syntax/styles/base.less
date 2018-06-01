@@ -79,60 +79,60 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @purple; //var, function etc.
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @orange; //свойства? (flex, absolute, relatice, center, some in js etc.)
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @cyan; //?
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @orange; //цыет всех цифр
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @cyan; //?
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @green; //?
   }
 }
 
 .syntax--variable {
-  color: @red;
+  color: @red; //названия методов в js
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: darken(@red, 10%); //?
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @syntax-text-color; //цвет параметров функции
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: @red; //?
+  color: @syntax-background-color; //?
 }
 
 .syntax--string {
-  color: @green;
+  color: @green; //строковые параметра (Roboto, url("этот текст"), etc.)
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @cyan; //?
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @orange; //?
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @red; //?
   }
 }
 
