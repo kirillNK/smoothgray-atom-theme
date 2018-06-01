@@ -55,26 +55,26 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @light-gray; //цвет комментария
 }
 
-.syntax--keyword {
-  color: @purple;
+.syntax--keyword { //ключевые слова
+  color: @purple; //цвета операторов (if, else, case, break etc.)
 
   &.syntax--control {
-    color: @purple;
+    color: @purple; //?
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @syntax-text-color; //логические и математические операторы (=,==,&&,!,+,?,<,>,||)
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @blue; //?
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @orange; //различные единицы измерения
   }
 }
 
